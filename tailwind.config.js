@@ -21,6 +21,7 @@ export default {
       },
       fontSize: {
         'h4': 'calc(1.275rem + 0.3vw)', 
+        'h5': '1.25rem'
       },
     },
   },

@@ -5,9 +5,10 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 export const Footer = () => {
     return(
-        <div className="container mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF]">
-           <div className="conatiner py-5 p-[70px]">
-           <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
+        <div className="container mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF] ">
+          <div className="container p-[50px] ">
+          <div className="conatiner py-[50px]">
+           <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
            <div className="">
            <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Company
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
@@ -79,46 +80,45 @@ export const Footer = () => {
                         </div>
            </div>
            <div>
-           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Opening</h4>
-                        <h5 className="text-light fw-normal">Monday - Saturday</h5>
-                        <p>09AM - 09PM</p>
-                        <h5 className="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p>
+           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Opening
+           <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
+           </h4>
+                        <h5 className="font-bold text-h5">Monday - Saturday</h5>
+                        <p className="text-h5">09AM - 09PM</p>
+                        <h5 className="font-bold text-h5 mt-5">Sunday</h5>
+                        <p className="text-h5">10AM - 08PM</p>
            </div>
            <div>
-           <h4 className="section-title text-start text-primary fw-normal mb-4">Newsletter</h4>
+           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Newsletter
+           <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
+           </h4>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div className="position-relative mx-auto" >
-                            <input className="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                            <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
+                        <div className="relative mx-auto w-full max-w-md mt-5">
+            <input  className="form-control border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded"  type="text"  placeholder="Your email"  />
+    <button   type="button"   className="bg-[#FEA116] text-white py-2 px-4 absolute top-0 right-0 mt-2 mr-2 rounded"  > Sign Up  </button>
+</div>
            </div>
             </div>
            </div>
-            <div className="container p-[70px]">
-               <div className="border-[#] border-2px">
+            <div className="container ">
+               <div className="py-6 text-base border-t border-t-[rgba(256,256,256,0.1)]">
                <div className="flex justify-between">
                 <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a className="border-bottom" href="#">
                             NZDine</a>, All Right Reserved. 
-							
-						
-							Designed By <a className="border-bottom" href="#">
-                            NZDine</a><br/><br/>
-                            Distributed By <a className="border-bottom" href="#" target="_blank">
-                            NZDine</a>
                         </div>
                         <div>
                         <div className="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Home</a>
+                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Cookies</a>
+                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Help</a>
+                                <a href="" className="">FQAs</a>
                             </div>
                         </div>
                 </div>
                </div>
             </div>
+          </div>
         </div>
     )
 }
