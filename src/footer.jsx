@@ -86,7 +86,7 @@ export const Footer = () => {
                         <p>10AM - 08PM</p>
            </div>
            <div>
-           <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+           <h4 className="section-title text-start text-primary fw-normal mb-4">Newsletter</h4>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                         <div className="position-relative mx-auto" >
                             <input className="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
