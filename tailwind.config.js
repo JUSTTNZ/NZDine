@@ -14,6 +14,14 @@ export default {
       animation: {
         'spin-slow': 'rotate 20s linear infinite'
       },
+      fontFamily:{
+        sans : ['Segoe UI', 'Helvetica'],
+        poppins: ['Poppins', 'sans-serif'],
+        paci: ['Pacifico ', 'cursive']
+      },
+      fontSize: {
+        'h4': 'calc(1.275rem + 0.3vw)', 
+      },
     },
   },
   plugins: [],

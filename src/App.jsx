@@ -7,6 +7,7 @@ import Contact from './pages/contact/contact'
 import Menu from './pages/menu/menu'
 import Pages from './pages/pages/pages'
 import Service from './pages/service/service'
+import { Footer } from './footer'
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
             <Route path='/menu' element={<Menu />}   />
             <Route path='/pages' element={<Pages />}   />
             <Route path='/service' element={<Service />}   />
+           
           </Routes>
+          <Footer />
         </Router>
       </div>
   )
