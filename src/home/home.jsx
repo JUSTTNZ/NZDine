@@ -9,7 +9,7 @@ import { Booking } from '../component/booking';
 export const Homepage = () => {
    
     return (
-        <div className='container'>
+        <div className=''>
         <div className="h-screen relative bg-cover bg-center bg-no repeat text-white "
         style={{backgroundImage: `url(${MainHeroBg})`}}>
         <div className="absolute inset-0 bg-gray-900 opacity-90"></div>

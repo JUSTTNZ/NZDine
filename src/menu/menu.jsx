@@ -18,7 +18,7 @@ export const Menu = () => {
         setActiveTab(tab)
     }
     return(
-        <div className="container">
+        <div className="">
 <div 
     className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
     style={{ 

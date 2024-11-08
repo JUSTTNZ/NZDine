@@ -6,7 +6,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { FaHeadset } from "react-icons/fa6";
 export const Service = () => {
     return(
-        <div className="container">
+        <div className="">
             <div 
     className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
     style={{ 
@@ -14,7 +14,7 @@ export const Service = () => {
     }}
 >
             <Navbar />
-            <div className="container py-5  mb-5">
+            <div className=" py-5  mb-5">
                 <div className="text-center my-5 pt-5 pb-4">
                     <h1 className="text-h1 text-bold text-white mb-3 ">Services</h1>
                     <nav aria-label="breadcrumb">
@@ -33,7 +33,7 @@ export const Service = () => {
                 </div>
             </div>
         </div>
-    <div className="conatiner py-[50px]">
+    <div className=" py-[50px]">
     <div className="text-center ">
                     <h5 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">
                     <span className="mr-1 absolute top-1/2 left-[-60px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
@@ -43,7 +43,7 @@ export const Service = () => {
                     <h1 className="mb-5 text-query text-[#0F172B] font-nun font-bold leading-custom">Explore Our Services</h1>
                 </div>
                 
-                <div className="container p-4 md:p-[50px]">
+                <div className=" p-4 md:p-[50px]">
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-4">
                     <div className="shadow-light rounded pt-3 hover:bg-[#FEA116] group transition duration-200 ease-in-out">
                             <div className="p-4 py-5 px-5">
