@@ -1,8 +1,14 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom"
 
 export const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
     return(
-        <div className="w-full flex justify-around items-center py-4">
+        <div className="w-full flex justify-around items-center py-4 ">
         <span className="text-lg text-yellow-500 z-10">NZDine</span>
         <nav className="ml-[200px]  z-10">
             <ul className="flex gap-8">
@@ -38,14 +44,38 @@ export const Navbar = () => {
                 >
                     MENU
                 </NavLink>
-                <NavLink 
-                    to="/pages" 
-                    className={({isActive}) => 
-                        `${isActive ? 'text-yellow-500' : 'text-gray-100'} hover:text-yellow-400 transition duration-500 ease-in-out`
-                    }
+                <div className="relative inline-block text-left">
+            <NavLink
+                onClick={toggleDropdown} 
+                className={`flex items-center text-gray-100 hover:text-yellow-400 transition duration-500 ease-in-out`}
+            >
+                <span>PAGES</span>
+                <svg 
+                    className={`ml-1 w-4 h-4 transform transition-transform duration-200 `} 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
                 >
-                    PAGES
-                </NavLink>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+            </NavLink>
+            {isOpen && (
+                <div className="absolute left-1 z-80 mt-4 w-48 bg-white rounded-md shadow-lg">
+                    <div className="py-1" role="menu" aria-orientation="vertical">
+                        <NavLink to="/Booking" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            Booking
+                        </NavLink>
+                        <NavLink to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            Our Team
+                        </NavLink>
+                        <NavLink to="/testimonial" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            Testimonial
+                        </NavLink>
+                    </div>
+                </div>
+            )}
+        </div>
                 <NavLink 
                     to="/contact" 
                     className={({isActive}) => 

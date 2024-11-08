@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Navbar } from "../component/navbar"
-import HeroBg from '../img/bg-hero.jpg';
 import video from '../img/video.jpg'
 import { FaPlay } from "react-icons/fa";
 export const Booking = () => {
@@ -17,34 +15,6 @@ export const Booking = () => {
         setIsOpen(false);
     };
     return(
-        <div className="container">
-            <div 
-    className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
-    style={{ 
-        backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
-    }}
->
-            <Navbar />
-            <div className="container py-5  mb-5">
-                <div className="text-center my-5 pt-5 pb-4">
-                    <h1 className="text-h1 font-bold text-white mb-3 ">Booking</h1>
-                    <nav aria-label="breadcrumb">
-    <ol className="flex justify-center space-x-4 text-sm text-gray-600 uppercase">
-        <li className="breadcrumb-item">
-            <a href="#" className="text-[#FEA116]">Home </a>/
-        </li>
-        <li className="breadcrumb-item">
-            <a href="#" className="text-[#FEA116]">Pages </a>/
-        </li>
-        <li className="breadcrumb-item text-white font-bold" aria-current="page">
-        Booking
-        </li>
-    </ol>
-</nav>
-                </div>
-            </div>
-        </div>
-
         <div className="container py-[50px]">
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 w-full" >
             <div className="relative w-full ">
@@ -130,7 +100,5 @@ export const Booking = () => {
                 
                     </div>
             </div>
-        </div>
-        
     )
 }
