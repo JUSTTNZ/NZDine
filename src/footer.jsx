@@ -6,11 +6,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 export const Footer = () => {
     return(
         <div className="container mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF] ">
-          <div className="container p-[50px] ">
+          <div className="container p-4 md:p-[50px] ">
           <div className="conatiner py-[50px]">
            <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
            <div className="">
-           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Company
+           <h4 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">Company
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
            </h4>
          <div className="mb-2">
@@ -53,7 +53,7 @@ export const Footer = () => {
            </div>
 
            <div>
-           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Contact
+           <h4 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">Contact
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
            </h4>
                         <p className="mb-2 flex">
@@ -80,7 +80,7 @@ export const Footer = () => {
                         </div>
            </div>
            <div>
-           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Opening
+           <h4 className="font-paci text-[#FEA116] font-[400] text-left text-h4 mb-4 relative inline-block">Opening
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
            </h4>
                         <h5 className="font-bold text-h5">Monday - Saturday</h5>
@@ -89,7 +89,7 @@ export const Footer = () => {
                         <p className="text-h5">10AM - 08PM</p>
            </div>
            <div>
-           <h4 className="font-paci text-[#FEA116] section-title font-[400] text-left text-h4 mb-4 relative inline-block">Newsletter
+           <h4 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">Newsletter
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
            </h4>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
