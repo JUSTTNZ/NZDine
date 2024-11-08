@@ -4,10 +4,10 @@ import './App.css'
 import { Homepage } from './pages/home/home'
 import  About from './pages/about/about'
 import Pages from './pages/pages/pages'
-import Service from './pages/service/service'
 import { Footer } from './footer'
 import { Contact } from './contact/contact'
 import { Menu } from './menu/menu'
+import { Service } from './services/services'
 
 
 function App() {
