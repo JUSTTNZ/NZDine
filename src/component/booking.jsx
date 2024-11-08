@@ -15,7 +15,7 @@ export const Booking = () => {
         setIsOpen(false);
     };
     return(
-        <div className="container py-[50px]">
+        <div className=" py-[50px]">
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 w-full" >
             <div className="relative w-full ">
             <img src={video} alt="Background Image" className="w-full h-full object-cover" />

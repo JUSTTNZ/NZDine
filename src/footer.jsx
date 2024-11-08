@@ -5,9 +5,9 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 export const Footer = () => {
     return(
-        <div className="container mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF] ">
-          <div className="container p-4 md:p-[50px] ">
-          <div className="conatiner py-[50px]">
+        <div className=" mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF] ">
+          <div className=" p-4 md:p-[50px] ">
+          <div className=" py-[50px]">
            <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
            <div className="">
            <h4 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">Company
