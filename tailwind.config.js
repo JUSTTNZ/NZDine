@@ -26,6 +26,10 @@ export default {
         'h1': 'calc(1.525rem + 3.3vw)',
         'query': 'calc(1.375rem + 1.5vw)',
       },
+      boxShadow: {
+        'light': '0 0 45px rgba(0, 0, 0, 0.08)', 
+      },
+
     },
   },
   plugins: [],
