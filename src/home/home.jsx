@@ -1,11 +1,14 @@
 
-import MainHeroBg from '../../img/bg-hero.jpg';
-import HeroBg from '../../img/hero.png';
-import { Navbar } from "../../component/navbar";
+import MainHeroBg from '../img/bg-hero.jpg';
+import HeroBg from '../img/hero.png';
+import { Navbar } from "../component/navbar";
+import { Service } from '../component/service';
+import { Menu } from '../component/menu';
+
 export const Homepage = () => {
    
     return (
-        <>
+        <div className='container'>
         <div className="h-screen relative bg-cover bg-center bg-no repeat text-white "
         style={{backgroundImage: `url(${MainHeroBg})`}}>
         <div className="absolute inset-0 bg-gray-900 opacity-90"></div>
@@ -21,7 +24,14 @@ export const Homepage = () => {
                     <img src={HeroBg} alt="heroBackground" className="w-full h-auto animate-spin-slow"/>
                 </div>
             </div>
+        
         </div>
-        </>
+       
+   
+        <Service />
+        <Menu />
+
+
+        </div>
     );
 };
