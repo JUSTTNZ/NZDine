@@ -8,7 +8,7 @@ export const Navbar = () => {
         setIsOpen(!isOpen);
     };
     return(
-        <div className="w-full flex justify-around items-center py-4 ">
+        <div className="w-full flex flex-wrap justify-around items-center py-4 ">
         <span className="text-lg text-yellow-500 z-10">NZDine</span>
         <nav className="ml-[200px]  z-10">
             <ul className="flex gap-8">
