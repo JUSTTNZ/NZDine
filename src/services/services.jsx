@@ -16,7 +16,7 @@ export const Service = () => {
             <Navbar />
             <div className=" py-5  mb-5">
                 <div className="text-center my-5 pt-5 pb-4">
-                    <h1 className="text-h1 text-bold text-white mb-3 ">Services</h1>
+                    <h1 className="text-h1 font-bold text-white mb-3 ">Services</h1>
                     <nav aria-label="breadcrumb">
     <ol className="flex justify-center space-x-4 text-sm text-gray-600 uppercase">
         <li className="breadcrumb-item">
