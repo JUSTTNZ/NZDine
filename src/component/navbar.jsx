@@ -1,14 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom"
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false)
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect (() => {
+        const handleScroll = () => {
+            if(window.scrollY > 0) {
+                setScrolled(true)
+            }
+            else {
+                setScrolled(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll)
+    },[]);
     return(
-        <div className="w-full flex flex-wrap justify-around items-center py-4 ">
+        <div className={`w-full flex justify-around items-center py-4 fixed top-0 z-20 ${scrolled ? 'bg-gray-900' : ''}`}>
         <span className="text-lg text-yellow-500 z-10">NZDine</span>
         <nav className="ml-[200px]  z-10">
             <ul className="flex gap-8">
@@ -86,7 +101,7 @@ export const Navbar = () => {
                 </NavLink>
             </ul>
         </nav>
-        <span className="py-2 px-8 bg-yellow-500 z-10 hover:bg-yellow-300 transition duration-300 ease-in-out cursor-pointer">BOOK A TABLE</span>
+        <span className=" inline-block py-2 px-8 bg-yellow-500 z-10 hover:bg-yellow-300 transition duration-300 ease-in-out cursor-pointer">BOOK A TABLE</span>
     </div>
     )
 }
