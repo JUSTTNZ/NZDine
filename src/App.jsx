@@ -9,6 +9,7 @@ import { Service } from './services/services'
 import { Homepage } from './home/home'
 import { Booking } from './pages/Booking'
 import AboutUs from './AboutUs/AboutUs'
+import OurTeam from './pages/OurTeam'
 
 
 
@@ -18,14 +19,13 @@ function App() {
       <Router >
       
           <Routes>
-            <Route path='/' element={<Homepage />}   />
-            
-            <Route path='/contact' element={<Contact />}   />
-            <Route path='/menu' element={<Menu />}   />
-            <Route path='/service' element={<Service />}   />
-            <Route path='/Booking' element={<Booking />} />
-            <Route path='/about' element={<AboutUs/>} />
-           
+            <Route path='/' element={<Homepage/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/menu' element={<Menu/>}/>
+            <Route path='/service' element={<Service/>}/>
+            <Route path='/Booking' element={<Booking/>}/>
+            <Route path='/about' element={<AboutUs/>}/>
+            <Route path='/ourTeam' element={<OurTeam/>}/>
           </Routes>
           <Footer />
         </Router>
