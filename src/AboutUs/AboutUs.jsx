@@ -61,7 +61,7 @@ const AboutUs = () => {
         }
     },[isInView]);
   return (
-    <div className="w-full">
+    <div className="w-full mb-10">
         <Navbar />
         <div 
             className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
@@ -146,7 +146,9 @@ const AboutUs = () => {
                 <p className="inline-block mt-8 py-4 px-10 rounded-sm text-gray-100 bg-[#FEA116] z-10 hover:bg-orange-400 transition duration-300 ease-in-out cursor-pointer">BOOK A TABLE</p>
             </div>
         </div>
-        <ChefTeam/>
+        <div className="mt-4">
+        <ChefTeam />
+        </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom"
-
+import { FaUtensils } from "react-icons/fa";
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false)
@@ -24,7 +24,10 @@ export const Navbar = () => {
     },[]);
     return(
         <div className={`w-full flex justify-around items-center py-4 fixed top-0 z-20 ${scrolled ? 'bg-gray-900' : ''}`}>
-        <span className="text-lg text-yellow-500 z-10">NZDine</span>
+           <a href="/" className="flex flex-cols text-[#FEA116]">
+           <span><FaUtensils size='50' /></span>
+           <span className="text-[2rem] font-bold ml-4 z-10">NZDine</span>
+           </a>
         <nav className="ml-[200px]  z-10">
             <ul className="flex gap-8">
                 <NavLink 
