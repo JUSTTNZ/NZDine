@@ -13,7 +13,7 @@ const teamMembers = [
 
 const ChefTeam = () => {
   return (
-    <div className="mt-10 pt-10 mb-10">
+    <div className=" mb-24 mt-10 pt-10 pb- 24">
       <div className="flex justify-center items-center font-paci text-[#FEA116] font-[400] space-x-6 mb-4">
         <hr className="flex border-t-2 w-12 border-[#FEA116]" />
         <p className="text-xl font-semibold">Team Members</p>
@@ -37,7 +37,7 @@ const ChefTeam = () => {
               <div className="mb-6">
                 <h2 className="font-bold text-2xl p-2">{member.name}</h2>
                 <p className="font-light text-lg text-center p-2">{member.designation}</p>
-                <div className="flex items-center mt-3">
+                <div className="flex items-center mt-3 mb-10">
                   <div className="hidden group-hover:flex items-center transition-opacity duration-300 ease-in-out">
                     <a className="flex items-center bg-[#FEA116] rounded-tl-[38px] rounded-tr-[38px] w-[38px] h-[38px] mx-1" href="#">
                       <FaFacebookF className="mx-3" size="18" color="#fff" />
