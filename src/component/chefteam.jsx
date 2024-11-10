@@ -13,7 +13,7 @@ const teamMembers = [
 
 const ChefTeam = () => {
   return (
-    <div className="h-screen mt-10 pt-10 mb-10">
+    <div className="mt-10 pt-10 mb-10">
       <div className="flex justify-center items-center font-paci text-[#FEA116] font-[400] space-x-6 mb-4">
         <hr className="flex border-t-2 w-12 border-[#FEA116]" />
         <p className="text-xl font-semibold">Team Members</p>
@@ -27,7 +27,7 @@ const ChefTeam = () => {
               key={member.id}
               className="flex flex-col mx-4 pt-4 items-center rounded-lg shadow-2xl shadow-gray-500/50 group overflow-hidden transition-all duration-500 ease-in-out max-h-[355px] hover:max-h-[400px]"
             >
-            <div>
+            <div className='px-3'>
               <img
                   src={member.img}
                   alt={member.name}
