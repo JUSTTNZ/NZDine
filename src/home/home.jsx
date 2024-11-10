@@ -5,6 +5,8 @@ import { Navbar } from "../component/navbar";
 import { Service } from '../component/service';
 import { Menu } from '../component/menu';
 import { Booking } from '../component/booking';
+import ChefTeam from '../component/chefteam';
+import Testimonial from '../component/Testimonial';
 
 export const Homepage = () => {
    
@@ -27,12 +29,11 @@ export const Homepage = () => {
             </div>
         
         </div>
-       
-   
         <Service />
         <Menu />
         <Booking />
-
+        <ChefTeam/>
+        <Testimonial/>
         </div>
     );
 };
