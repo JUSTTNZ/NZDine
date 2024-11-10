@@ -21,7 +21,7 @@ const ChefTeam = () => {
       </div>
       <h2 className="mb-5 text-query text-[#0F172B] font-nun font-bold leading-custom text-center">Our Master Chefs</h2>
       <div className="mt-10 mx-16">
-        <ol className="grid grid-cols-4 gap-4">
+        <ol className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {teamMembers.map((member) => (
             <li
               key={member.id}
