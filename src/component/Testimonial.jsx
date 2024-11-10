@@ -13,7 +13,7 @@ const Clients = [
 ]
 const Testimonial = () => {
   return (
-    <div>
+    <div className="h-screen">
         <div>
             <div className="text-center ">
                 <h5 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">

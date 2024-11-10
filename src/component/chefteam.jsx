@@ -13,7 +13,7 @@ const teamMembers = [
 
 const ChefTeam = () => {
   return (
-    <div className="h-screen mt-10 pt-10 mb-10">
+    <div className="mt-10 pt-10 mb-10">
       <div className="flex justify-center items-center font-paci text-[#FEA116] font-[400] space-x-6 mb-4">
         <hr className="flex border-t-2 w-12 border-[#FEA116]" />
         <p className="text-xl font-semibold">Team Members</p>
@@ -21,13 +21,13 @@ const ChefTeam = () => {
       </div>
       <h2 className="mb-5 text-query text-[#0F172B] font-nun font-bold leading-custom text-center">Our Master Chefs</h2>
       <div className="mt-10 mx-16">
-        <ol className="grid grid-cols-4 gap-4">
+        <ol className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {teamMembers.map((member) => (
             <li
               key={member.id}
               className="flex flex-col mx-4 pt-4 items-center rounded-lg shadow-2xl shadow-gray-500/50 group overflow-hidden transition-all duration-500 ease-in-out max-h-[355px] hover:max-h-[400px]"
             >
-            <div>
+            <div className='px-3'>
               <img
                   src={member.img}
                   alt={member.name}
