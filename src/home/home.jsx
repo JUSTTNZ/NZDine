@@ -6,6 +6,7 @@ import { Booking } from '../component/booking';
 import ChefTeam from '../component/chefteam';
 import Testimonial from '../component/Testimonial';
 import Hero from '../component/hero';
+import Experience from '../component/experience';
 
 export const Homepage = () => {
    
@@ -15,9 +16,10 @@ export const Homepage = () => {
         style={{backgroundImage: `url(${MainHeroBg})`}}>
         <div className="absolute inset-0 bg-gray-900 opacity-90"></div>
          <Navbar  />
-         <Hero/>
+         <Hero />
         </div>
         <Service />
+        <Experience/>
         <Menu />
         <Booking />
         <ChefTeam/>

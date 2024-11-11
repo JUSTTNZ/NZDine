@@ -1,132 +1,80 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom"
-import { FaUtensils } from "react-icons/fa";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { FaUtensils, FaBars, FaTimes } from "react-icons/fa";
+
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
 
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
+    const toggleDropdown = () => setIsOpen(!isOpen);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+        // toggleHeroShift(!menuOpen);
     };
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen)
-    }
-
-    useEffect (() => {
-        const handleScroll = () => {
-            if(window.scrollY > 0) {
-                setScrolled(true)
-            }
-            else {
-                setScrolled(false)
-            }
-        }
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 0);
         window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
-        return () => window.removeEventListener('scroll', handleScroll)
-    },[]);
-    return(
-        <div className={` w-full flex justify-around items-center py-4 fixed top-0 z-50 ${scrolled ? 'bg-gray-900' : ''}`}>
-            <div className="relative">
-                <button 
-                    className=" text-3xl text-gray-400 border rounded md:hidden p-2 "
-                    onClick={toggleMenu}>
-                    {menuOpen ? <FaTimes/> : <FaBars/>}
-                </button>
-            </div>
-           <a href="/" className="flex flex-cols text-[#FEA116]">
-           <span><FaUtensils size='50' /></span>
-           <span className=" inline text-[2.5rem] text-center font-bold ml-2 z-10">NZDine</span>
-           </a>
-        <nav className={`absolute right-2 left-0  ml-[200px]  z-10`}>
-            <ul className="flex gap-8">
-                <NavLink 
-                    to="/" 
-                    className={({isActive}) => 
-                        `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500 ease-in-out`
-                    }
-                >
-                    HOME
-                </NavLink>
-                <NavLink 
-                    to="/about" 
-                    className={({isActive}) => 
-                        `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500 ease-in-out`
-                    }    
-                >
-                    ABOUT
-                </NavLink>
-                <NavLink 
-                    to="/service" 
-                    className={({isActive}) => 
-                        `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500 ease-in-out`
-                    }
-                >
-                    SERVICE
-                </NavLink>
-                <NavLink 
-                    to="/menu" 
-                    className={({isActive}) => 
-                        `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500 ease-in-out`
-                    }
-                >
-                    MENU
-                </NavLink>
-                <div className="relative inline-block text-left">
-            <NavLink
-                onClick={toggleDropdown} 
-                className={`flex items-center text-gray-100 hover:text-[#FEA116] transition duration-500 ease-in-out`}
-            >
-                <span>PAGES</span>
-                <svg 
-                    className={`ml-1 w-4 h-4 transform transition-transform duration-200 `} 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-            </NavLink>
-            {isOpen && (
-                <div className="absolute left-1 z-80 mt-4 w-48 bg-white rounded-md shadow-lg">
-                    <div className="py-1" role="menu" aria-orientation="vertical">
-                        <NavLink 
-                            to="/Booking" 
-                            className={({isActive}) => 
-                            `${isActive ? 'bg-[#FEA116]' : 'bg-white'}  block px-4 py-2 text-sm text-gray-700  `}>
-                                Booking
-                        </NavLink>
-                        <NavLink 
-                            to="/team" 
-                            className={({isActive}) => 
-                                `${isActive ? 'bg-[#FEA116]' : 'bg-white'}  block px-4 py-2 text-sm text-gray-700  `}>
-                                Our Team
-                        </NavLink>
-                        <NavLink 
-                            to="/testimonial" 
-                            className={({isActive}) => 
-                                `${isActive ? 'bg-[#FEA116]' : 'bg-white'}  block px-4 py-2 text-sm text-gray-700  `}>
-                                Testimonial
-                        </NavLink>
+    return (
+        <div className={`w-full flex items-center py-4 fixed top-0 z-50 ${scrolled ? 'bg-gray-900' : ''}`}>
+            <a href="/" className="flex items-center text-[#FEA116] ml-4">
+                <FaUtensils size='50' />
+                <span className="text-[2.5rem] font-bold ml-2">NZDine</span>
+            </a>
+
+            <div className="flex-grow"></div>
+
+            <button className="md:hidden text-3xl border rounded p-2 text-gray-400 mr-4" onClick={toggleMenu}>
+                {menuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+
+            <nav className={`absolute mr-8 md:relative md:flex md:items-center md:w-auto bg-gray-800 md:bg-transparent ${menuOpen ? "menu-open" : "hidden"} md:block w-full md:w-auto top-16 md:top-0 md:right-0 left-0 md:justify-end transition-all duration-500 ease-in-out mt-2`}>
+                <ul className="flex flex-col md:flex-row items-start md:items-center gap-y-6 md:gap-x-12 p-4 mt-2 md:p-0 md:ml-0">
+                    <NavLink to="/" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
+                        HOME
+                    </NavLink>
+                    <NavLink to="/about" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
+                        ABOUT
+                    </NavLink>
+                    <NavLink to="/service" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
+                        SERVICE
+                    </NavLink>
+                    <NavLink to="/menu" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
+                        MENU
+                    </NavLink>
+                    <div className="relative">
+                        <button onClick={toggleDropdown} className="text-gray-100 hover:text-[#FEA116] transition duration-500 flex items-center">
+                            PAGES
+                            <svg className={`ml-1 w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        {isOpen && (
+                            <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+                                <NavLink to="/Booking" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FEA116]">
+                                    Booking
+                                </NavLink>
+                                <NavLink to="/team" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FEA116]">
+                                    Our Team
+                                </NavLink>
+                                <NavLink to="/testimonial" className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#FEA116]">
+                                    Testimonial
+                                </NavLink>
+                            </div>
+                        )}
                     </div>
-                </div>
-            )}
+                    <NavLink to="/contact" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
+                        CONTACT
+                    </NavLink>
+                    <button className="bg-[#FEA116] text-white py-2 px-4 rounded hover:bg-yellow-300 transition duration-300 cursor-pointer inline-block md:inline-block">
+                        BOOK A TABLE
+                    </button>
+                </ul>
+            </nav>
         </div>
-                <NavLink 
-                    to="/contact" 
-                    className={({isActive}) => 
-                        `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500 ease-in-out`
-                    }
-                >
-                    CONTACT
-                </NavLink>
-            </ul>
-        </nav>
-        <span className=" inline-block text-white py-2 px-8 bg-[#FEA116] z-10 hover:bg-yellow-300 transition duration-300 ease-in-out cursor-pointer">BOOK A TABLE</span>
-    </div>
-    )
-}
+    );
+};
