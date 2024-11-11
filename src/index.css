@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-slide > div {
+    margin: 0 10px;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: gray; /* Inactive dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FEA116; /* Active dot color */
+}
+
+/* Smooth transition for each slide */
+/* Common styling for each slide */
+.slick-slide {
+    transition: transform 0.5s ease; /* Smooth transition for scaling effect */
+}
+
+/* Style for the active (centered) slide */
+.active-slide {
+    background-color: #FEA116; /* Orange background */
+    transform: scale(1); /* Slightly larger for emphasis */
+    transition: background-color 0.6s ease, transform 0.5s ease; /* Smooth background color change */
+}
+
+/* Non-active slides */
+.non-active-slide {
+    background-color: white; /* Default background for non-active slides */
+    transform: scale(0.90); /* Slightly smaller than active slide */
+}
+
+
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #FEA116;
+}
