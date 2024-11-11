@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .slick-slide > div {
     margin: 0 10px;
     transition: transform 0.8s ease, opacity 0.8s ease;
