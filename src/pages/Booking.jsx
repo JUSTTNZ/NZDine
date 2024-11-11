@@ -17,7 +17,7 @@ export const Booking = () => {
         setIsOpen(false);
     };
     return(
-        <div className="container">
+        <div>
             <div 
     className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
     style={{ 
@@ -26,7 +26,7 @@ export const Booking = () => {
 >
             <Navbar />
             <div className="container py-5  mb-5">
-                <div className="text-center my-5 pt-5 pb-4">
+                <div className="text-center my-12 pt-5 pb-4">
                     <h1 className="text-h1 font-bold text-white mb-3 ">Booking</h1>
                     <nav aria-label="breadcrumb">
     <ol className="flex justify-center space-x-4 text-sm text-gray-600 uppercase">
@@ -36,7 +36,7 @@ export const Booking = () => {
         <li className="breadcrumb-item">
             <a href="#" className="text-[#FEA116]">Pages </a>/
         </li>
-        <li className="breadcrumb-item text-white font-bold" aria-current="page">
+        <li className="breadcrumb-item text-white" aria-current="page">
         Booking
         </li>
     </ol>
@@ -45,7 +45,7 @@ export const Booking = () => {
             </div>
         </div>
 
-        <div className="container py-[50px]">
+        <div className=" py-[50px]">
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 w-full" >
             <div className="relative w-full ">
             <img src={video} alt="Background Image" className="w-full h-full object-cover" />
@@ -84,7 +84,7 @@ export const Booking = () => {
                     </div>
                 </div>
             )}
-                <div className="container w-full bg-[#0F172B]  ">
+                <div className=" w-full bg-[#0F172B]  ">
                 <div className="inline-flex flex-col items-start  p-[50px] w-full">
     <h5 className="font-paci text-[#FEA116] font-[400] text-left text-h4 mb-4 relative inline-block">
         Reservation
@@ -92,7 +92,7 @@ export const Booking = () => {
     </h5>
     <h1 className="mb-5 text-query text-white font-nun font-bold leading-custom">Book A Table Online</h1>
     <form>
-        <div className="container">
+        <div className="">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div className="mb-3">
                     <input type="text" className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded" id="name" placeholder="Your Name" />
