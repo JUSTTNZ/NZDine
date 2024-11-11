@@ -26,23 +26,23 @@ export const Menu = () => {
     }}
 >
             <Navbar />
-            <div className="container py-5  mb-5">
-                <div className="text-center my-5 pt-5 pb-4">
-                    <h1 className="text-h1 text-bold text-white mb-3 ">Food Menu</h1>
-                    <nav aria-label="breadcrumb">
-    <ol className="flex justify-center space-x-4 text-sm text-gray-600 uppercase">
-        <li className="breadcrumb-item">
-            <a href="#" className="text-[#FEA116]">Home </a>/
-        </li>
-        <li className="breadcrumb-item">
-            <a href="#" className="text-[#FEA116]">Pages </a>/
-        </li>
-        <li className="breadcrumb-item text-white font-bold" aria-current="page">
-            Menu
-        </li>
-    </ol>
-</nav>
-                </div>
+            <div className=" py-5  mb-5">
+              <div className=" flex flex-col text-center items-center my-12 pt-5 pb-4 justify-center">
+                  <h1 className="text-h1 text-center font-bold text-white mb-3 text-center ">Food Menu</h1>
+                  <nav aria-label="breadcrumb">
+                    <ol className="flex justify-center space-x-4 text-sm text-gray-600 uppercase">
+                        <li className="breadcrumb-item">
+                            <a href="#" className="text-[#FEA116]">Home </a>/
+                        </li>
+                        <li className="breadcrumb-item">
+                            <a href="#" className="text-[#FEA116]">Pages </a>/
+                        </li>
+                        <li className="breadcrumb-item text-white font-bold" aria-current="page">
+                        Food Menu
+                        </li>
+                    </ol>
+                  </nav>
+              </div>
             </div>
         </div>
 

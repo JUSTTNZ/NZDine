@@ -5,7 +5,7 @@ export  const Contact = () => {
     return(
         
 
-<div className="container">
+<div>
 <div 
     className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
     style={{ 
@@ -14,7 +14,7 @@ export  const Contact = () => {
 >
             <Navbar />
             <div className="container py-5  mb-5">
-                <div className="text-center my-5 pt-5 pb-4">
+                <div className="text-center my-12 pt-5 pb-4">
                     <h1 className="text-h1 font-bold text-white mb-3 ">Contact Us</h1>
                     <nav aria-label="breadcrumb">
     <ol className="flex justify-center space-x-4 text-sm text-gray-600 uppercase">
@@ -24,7 +24,7 @@ export  const Contact = () => {
         <li className="breadcrumb-item">
             <a href="#" className="text-[#FEA116]">Pages </a>/
         </li>
-        <li className="breadcrumb-item text-white font-bold" aria-current="page">
+        <li className="breadcrumb-item text-white" aria-current="page">
             Contact
         </li>
     </ol>

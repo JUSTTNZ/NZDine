@@ -10,6 +10,7 @@ import { Homepage } from './home/home'
 import { Booking } from './pages/Booking'
 import AboutUs from './AboutUs/AboutUs'
 import OurTeam from './pages/OurTeam'
+import Testimony from './pages/Testimony'
 
 
 
@@ -17,7 +18,6 @@ function App() {
   return (
       <div>
       <Router >
-      
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/contact' element={<Contact/>}/>
@@ -25,7 +25,8 @@ function App() {
             <Route path='/service' element={<Service/>}/>
             <Route path='/Booking' element={<Booking/>}/>
             <Route path='/about' element={<AboutUs/>}/>
-            <Route path='/ourTeam' element={<OurTeam/>}/>
+            <Route path='/team' element={<OurTeam/>}/>
+            <Route path='/testimonial' element={<Testimony/>}/>
           </Routes>
           <Footer />
         </Router>

@@ -4,7 +4,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { FaHeadset } from "react-icons/fa6";
 export const Service = () => {
     return(
-        <div className="container p-4 md:p-[50px]">
+        <div className=" p-4 md:p-[50px]">
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-4">
         <div className="shadow-light rounded pt-3 hover:bg-[#FEA116] group transition duration-200 ease-in-out">
