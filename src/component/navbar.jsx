@@ -20,20 +20,21 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <div className={`w-full flex items-center py-4 fixed top-0 z-50 ${scrolled ? 'bg-gray-900' : ''}`}>
-            <a href="/" className="flex items-center text-[#FEA116] ml-4">
-                <FaUtensils size='50' />
-                <span className="text-[2.5rem] font-bold ml-2">NZDine</span>
-            </a>
+        <div className={`w-full flex items-center fixed top-0 z-50 ${scrolled ? 'bg-gray-900' : ''}`}>
+    <a href="/" className="flex items-center text-[#FEA116] md:pl-10 pl-4 pt-2 overflow-hidden">
+        <FaUtensils size='40' />
+        <span className="text-query font-bold ml-2">NZDine</span>
+    </a>
 
-            <div className="flex-grow"></div>
+    <div className="flex-grow"></div>
 
-            <button className="md:hidden text-3xl border rounded p-2 text-gray-400 mr-4" onClick={toggleMenu}>
-                {menuOpen ? <FaTimes /> : <FaBars />}
-            </button>
+    <button className="md:hidden border rounded p-2 text-gray-400 mr-4 overflow-hidden" onClick={toggleMenu}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+    </button>
 
-            <nav className={`absolute mr-8 md:relative md:flex md:items-center md:w-auto bg-gray-800 md:bg-transparent ${menuOpen ? "menu-open" : "hidden"} md:block w-full md:w-auto top-16 md:top-0 md:right-0 left-0 md:justify-end transition-all duration-500 ease-in-out mt-2`}>
-                <ul className="flex flex-col md:flex-row items-start md:items-center gap-y-6 md:gap-x-12 p-4 mt-2 md:p-0 md:ml-0">
+    <nav className={`absolute mr-8 md:relative md:flex md:flex-wrap md:items-center md:w-auto bg-gray-800 md:bg-transparent ${menuOpen ? "menu-open" : "hidden"} md:block w-full md:w-auto top-16 md:top-0 md:right-0 left-0 md:justify-end transition-all duration-500 ease-in-out mt-2`}>
+        <ul className="flex flex-col md:flex-row items-start md:items-center gap-y-6 md:gap-x-5 p-4 mt-2 md:p-0 md:ml-0">
+    
                     <NavLink to="/" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
                         HOME
                     </NavLink>
@@ -70,11 +71,13 @@ export const Navbar = () => {
                     <NavLink to="/contact" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
                         CONTACT
                     </NavLink>
-                    <button className="bg-[#FEA116] text-white py-2 px-4 rounded hover:bg-yellow-300 transition duration-300 cursor-pointer inline-block md:inline-block">
+                    <button className="bg-[#FEA116] text-white py-2 uppercase rounded-sm px-6   transition duration-300 cursor-pointer inline-block md:inline-block">
                         BOOK A TABLE
                     </button>
-                </ul>
-            </nav>
-        </div>
+                
+        </ul>
+    </nav>
+</div>
+        
     );
 };

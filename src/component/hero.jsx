@@ -2,13 +2,13 @@ import HeroBg from '../img/hero.png';
 const Hero = () => {
   return (
     <div>
-      <div className="h-[120vh] flex flex-wrap items-center justify-between py-16 pl-16 pr-24">
-                <div className="z-10" >
-                    <h1 className="text-6xl font-bold mb-4 z-10">Enjoy Our <br /> Delicious Meals</h1>
-                    <p className="text-lg font-bold mb-4 z-10">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. <br /> Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, <br /> sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p className="inline-block py-2 px-8 bg-[#FEA116] z-10 hover:bg-yellow-300 transition duration-300 ease-in-out cursor-pointer">BOOK A TABLE</p>
+      <div className="h-auto md:h-[140vh] grid grid-cols-1 md:grid-cols-2  p-7 md:p-16  gap-10">
+                <div className="z-10 pt-[100px] md:pt-0   flex flex-col justify-center items-center md:items-start " >
+                    <h1 className=" text-hero font-bold font-nun  leading-tight text-center md:text-left">Enjoy Our <br /> <span className=''>Delicious Meals</span></h1>
+                    <p className="text-lg  mb-4 z-10 text-center md:text-left">Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit.Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p className="inline-block py-4 px-8 bg-[#FEA116] rounded-sm  transition duration-300 ease-in-out cursor-pointer">BOOK A TABLE</p>
                 </div>
-                <div className="flex-1 max-w-md ">
+                <div className="max-w md:w-[40vw]   pt-10 overflow-hidden">
                     <img src={HeroBg} alt="heroBackground" className="w-full h-auto animate-spin-slow"/>
                 </div>
             </div>

@@ -25,6 +25,7 @@ export default {
         'h5': '1.25rem',
         'h1': 'calc(1.525rem + 3.3vw)',
         'query': 'calc(1.375rem + 1.5vw)',
+         'hero': 'calc(1.525rem + 3.3vw)'
       },
       boxShadow: {
         'light': '0 0 45px rgba(0, 0, 0, 0.08)', 
