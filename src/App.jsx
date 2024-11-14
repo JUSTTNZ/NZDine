@@ -14,6 +14,7 @@ import OurTeam from './pages/OurTeam'
 import Testimony from './pages/Testimony'
 import { Navbar } from './component/navbar'
 import { useEffect, useState } from 'react'
+import Back from './component/Back'
 
 
 
@@ -63,6 +64,7 @@ const Loader = () => (
           </Routes>
           </Layout>
           <Footer   />
+          <Back />
         </Router>
         
       </div>
