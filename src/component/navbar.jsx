@@ -21,19 +21,19 @@ export const Navbar = () => {
 
     return (
         <div className={`w-full flex items-center fixed top-0 z-50  ${scrolled ? 'bg-gray-900' : ''}`}>
-    <a href="/" className="flex items-center text-[#FEA116] md:pl-10 pl-4 pt-2 overflow-hidden">
+    <a href="/" className="flex items-center text-[#FEA116] md:pl-10 pl-4 py-2 pt-2 overflow-hidden">
         <FaUtensils size='40' />
         <span className="text-query font-bold ml-2">NZDine</span>
     </a>
 
     <div className="flex-grow"></div>
 
-    <button className="md:hidden border rounded p-2 text-gray-400 mr-4 overflow-hidden" onClick={toggleMenu}>
+    <button className="lg:hidden border rounded p-2 text-gray-400 mr-4 overflow-hidden" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
     </button>
 
-    <nav className={`absolute mr-8 md:relative md:flex md:flex-wrap md:items-center md:w-auto bg-gray-800 md:bg-transparent ${menuOpen ? "menu-open" : "hidden"} md:block w-full md:w-auto top-16 md:top-0 md:right-0 left-0 md:justify-end transition-all duration-500 ease-in-out mt-2`}>
-        <ul className="flex flex-col md:flex-row items-start md:items-center gap-y-6 md:gap-x-5 p-4 mt-2 md:p-0 md:ml-0">
+    <nav className={`absolute mr-8 lg:relative lg:flex lg:flex-wrap lg:items-center lg:w-auto bg-gray-800 lg:bg-transparent ${menuOpen ? "menu-open" : "hidden"} lg:block w-full lg:w-auto top-12 lg:top-0 lg:right-0 left-0 md:justify-end transition-all duration-500 ease-in-out mt-2`}>
+        <ul className="flex flex-col lg:flex-row items-start lg:items-center gap-y-6 lg:gap-x-5 p-4 mt-2 lg:p-0 md:ml-0">
     
                     <NavLink to="/" className={({ isActive }) => `${isActive ? 'text-[#FEA116]' : 'text-gray-100'} hover:text-[#FEA116] transition duration-500`}>
                         HOME

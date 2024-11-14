@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className=" mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF] ">
           <div className=" p-4 md:p-[50px] ">
           <div className=" py-[50px]">
-           <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
+           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
            <div className="">
            <h4 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">Company
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
