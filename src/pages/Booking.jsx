@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar } from "../component/navbar"
+
 import HeroBg from '../img/bg-hero.jpg';
 import video from '../img/video.jpg'
 import { FaPlay } from "react-icons/fa";
@@ -24,7 +24,7 @@ export const Booking = () => {
         backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
     }}
 >
-            {/* <Navbar /> */}
+         
             <div className="container py-5  mb-5">
                 <div className="text-center my-12 pt-5 pb-4">
                     <h1 className="text-h1 font-bold text-white mb-3 ">Booking</h1>

@@ -1,5 +1,5 @@
 import MainHeroBg from '../img/bg-hero.jpg';
-import { Navbar } from "../component/navbar";
+
 import { Service } from '../component/service';
 import { Menu } from '../component/menu';
 import { Booking } from '../component/booking';
@@ -15,7 +15,7 @@ export const Homepage = () => {
         <div className=" relative bg-cover bg-center bg-no-repeat text-white "
         style={{backgroundImage: `url(${MainHeroBg})`}}>
         <div className="absolute inset-0 bg-gray-900 opacity-90"></div>
-         {/* <Navbar  /> */}
+        
          <Hero />
         </div>
         <Service />

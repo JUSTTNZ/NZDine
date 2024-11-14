@@ -1,4 +1,4 @@
-import { Navbar } from "../component/navbar"
+
 import HeroBg from '../img/bg-hero.jpg';
 import { FaCoffee } from "react-icons/fa";
 import { FaHamburger } from "react-icons/fa";
@@ -25,7 +25,7 @@ export const Menu = () => {
         backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
     }}
 >
-            <Navbar />
+          
             <div className=" py-5  mb-5">
               <div className=" flex flex-col text-center items-center my-12 pt-5 pb-4 justify-center">
                   <h1 className="text-h1 text-center font-bold text-white mb-3 text-center ">Food Menu</h1>
