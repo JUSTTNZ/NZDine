@@ -11,6 +11,7 @@ import { Booking } from './pages/Booking'
 import AboutUs from './AboutUs/AboutUs'
 import OurTeam from './pages/OurTeam'
 import Testimony from './pages/Testimony'
+import { Navbar } from './component/navbar'
 
 
 
@@ -18,8 +19,10 @@ function App() {
   return (
       <div>
       <Router >
+      <Navbar  />
+      
           <Routes>
-            <Route path='/' element={<Homepage/>}/>
+            <Route path='/'  element={<Homepage/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/menu' element={<Menu/>}/>
             <Route path='/service' element={<Service/>}/>
@@ -28,7 +31,7 @@ function App() {
             <Route path='/team' element={<OurTeam/>}/>
             <Route path='/testimonial' element={<Testimony/>}/>
           </Routes>
-          <Footer />
+          <Footer   />
         </Router>
       </div>
   )

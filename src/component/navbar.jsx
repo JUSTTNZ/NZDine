@@ -20,7 +20,7 @@ export const Navbar = () => {
     }, []);
 
     return (
-        <div className={`w-full flex items-center fixed top-0 z-50 ${scrolled ? 'bg-gray-900' : ''}`}>
+        <div className={`w-full flex items-center fixed top-0 z-50  ${scrolled ? 'bg-gray-900' : ''}`}>
     <a href="/" className="flex items-center text-[#FEA116] md:pl-10 pl-4 pt-2 overflow-hidden">
         <FaUtensils size='40' />
         <span className="text-query font-bold ml-2">NZDine</span>

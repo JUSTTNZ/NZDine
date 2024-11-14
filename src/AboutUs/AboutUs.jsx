@@ -12,7 +12,7 @@ const AboutUs = () => {
     
   return (
     <div className="w-full mb-10">
-        <Navbar />
+        {/* <Navbar /> */}
         <div 
             className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
             style={{ 

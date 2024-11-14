@@ -102,20 +102,17 @@ export const Footer = () => {
            </div>
             <div className="container ">
                <div className="py-6 text-base border-t border-t-[rgba(256,256,256,0.1)]">
-               <div className="flex justify-between">
-                <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">
-                            NZDine</a>, All Right Reserved. 
-                        </div>
-                        <div>
-                        <div className="footer-menu">
-                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Home</a>
-                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Cookies</a>
-                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Help</a>
-                                <a href="" className="">FQAs</a>
-                            </div>
-                        </div>
-                </div>
+               <div className="flex flex-col md:flex-row justify-between items-center p-4  text-white">
+    <div className="text-center md:text-left mb-3 md:mb-0">
+        &copy; <a className="border-b border-white" href="#">NZDine</a>, All Rights Reserved.
+    </div>
+    <div className="footer-menu mt-3 md:mt-0">
+        <a href="#" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)] last:border-r-0">Home</a>
+        <a href="#" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)] last:border-r-0">Cookies</a>
+        <a href="#" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)] last:border-r-0">Help</a>
+        <a href="#" className="last:border-r-0">FAQs</a>
+    </div>
+</div>
                </div>
             </div>
           </div>

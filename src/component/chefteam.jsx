@@ -21,17 +21,17 @@ const ChefTeam = () => {
       </div>
       <h2 className="mb-5 text-query text-[#0F172B] font-nun font-bold leading-custom text-center">Our Master Chefs</h2>
       <div className="mt-10 mx-16">
-        <ol className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <ol className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
           {teamMembers.map((member) => (
             <li
               key={member.id}
-              className="flex flex-col mx-4 pt-4 items-center rounded-lg shadow-2xl shadow-gray-500/50 group overflow-hidden transition-all duration-500 ease-in-out max-h-[355px] hover:max-h-[400px]"
+              className="flex flex-col mx-4 pt-4 items-center rounded-lg shadow-2xl shadow-gray-500/50 group overflow-hidden transition-all duration-500 ease-in-out max-h-[355px] hover:max-h-[400px] w-full"
             >
             <div className='px-3'>
               <img
                   src={member.img}
                   alt={member.name}
-                  className="w-[220px] h-[220px] rounded-full inline-block mb-6 transform transition-transform duration-500 ease-in-out group-hover:scale-105"
+                  className="md:w-[220px] md:h-[220px] rounded-full inline-block mb-6 transform transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
             </div>
               <div className="mb-6">

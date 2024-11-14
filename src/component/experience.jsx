@@ -60,22 +60,22 @@ const Experience = () => {
     <div>
   <div className="flex flex-col justify-center items-center lg:flex-row" ref={sectionRef}>
     {/* First Section: Image Grid */}
-    <div className="max-w-xl  mx-16">
-                <div className="grid grid-cols-2 relative gap-4 my-24 ml-12">
-                    <div className="w-full">
-                        <img src={aboutImg1} alt="" />
-                    </div>
-                    <div className="w-3/4 translate-x-[-0.1%] translate-y-[25%] ">
-                        <img src={aboutImg2} alt="" />
-                    </div>
-                    <div className="w-3/4 translate-x-[33%] translate-y-[0]">
-                        <img src={aboutImg3} alt="" />
-                    </div>
-                    <div className="w-full">
-                        <img src={aboutImg4} alt="" />
-                    </div>
-                </div>
-            </div>
+    <div className="max-w-xl md:mx-16 w-full">
+    <div className="grid grid-cols-2 relative gap-4 my-24 md:ml-12 pl-2 ">
+        <div className="w-full">
+            <img src={aboutImg1} alt="" className="w-full h-auto" />
+        </div>
+        <div className="w-3/4 translate-x-[-0.1%] translate-y-[25%]">
+            <img src={aboutImg2} alt="" className="w-full h-auto" />
+        </div>
+        <div className="w-3/4 translate-x-[33%] translate-y-[0]">
+            <img src={aboutImg3} alt="" className="w-full h-auto" />
+        </div>
+        <div className="w-full">
+            <img src={aboutImg4} alt="" className="w-full h-auto" />
+        </div>
+    </div>
+</div>
 
     {/* Second Section: Text Content */}
     <div className="lg:mt-[150px] mt-8 lg:ml-12 ml-4">
@@ -95,7 +95,7 @@ const Experience = () => {
         <br /> duo justo magna dolore erat amet
       </p>
 
-      <div className="flex lg:flex-row space-x-6  lg:space-y-0 lg:space-x-16 mt-6">
+      <div className="flex flex-col lg:flex-row space-x-6  lg:space-y-0 lg:space-x-16 mt-6">
   {/* Experience Section */}
   <div className="flex items-center lg:flex-row">
     <div className="border-l-8 border-[#FEA116] h-14 pl-4 mb-4 lg:mb-0"></div>
@@ -111,7 +111,7 @@ const Experience = () => {
   </div>
 
   {/* Master Chefs Section */}
-  <div className="flex items-center lg:flex-row">
+  <div className="flex md:items-center lg:flex-row">
     <div className="border-l-8 border-[#FEA116] h-14 pl-4 mb-4 lg:mb-0"></div>
     <div className="flex space-x-8">
       <p className="text-5xl text-[#FEA116] font-bold">
