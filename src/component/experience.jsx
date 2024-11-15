@@ -34,7 +34,7 @@ const Experience = () => {
         if(isInView) {
             const experienceInterval = setInterval(() => {
                 setExperienceYears((prevExperienceYears) => {
-                    if(prevExperienceYears < 15) {
+                    if(prevExperienceYears < 25) {
                         return prevExperienceYears + 1;
                     } else {
                         clearInterval(experienceInterval)
@@ -44,7 +44,7 @@ const Experience = () => {
             }, 100);
             const chefsInterval = setInterval(() => {
                 setExperienceChefs((prevChefNumber) => {
-                    if(prevChefNumber < 50) {
+                    if(prevChefNumber < 80) {
                         return prevChefNumber + 1;
                     } else {
                         clearInterval(chefsInterval)
