@@ -16,7 +16,7 @@ const Experience = () => {
                     setIsInView(true);
                 }
             },
-            { threshold: 0.50 }
+            { threshold: 0.65 }
         );
 
         if (sectionRef.current) {
