@@ -51,7 +51,7 @@ const Experience = () => {
                         return prevChefNumber;
                     }
                 })
-            },30)
+            },40)
             return () => clearInterval(chefsInterval)
         }
     },[isInView]);
