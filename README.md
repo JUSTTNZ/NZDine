@@ -1,10 +1,10 @@
-Here’s a README file tailored to your frontend-only NZdine Restaurant project:
+##Here’s a README file tailored to your frontend-only NZdine Restaurant project:
 
-NZdine Restaurant
+#NZdine Restaurant
 
 Welcome to NZdine, a responsive restaurant website designed to enhance the customer dining experience. This project focuses on providing a modern, user-friendly interface for exploring menus, making reservations, and contacting the restaurant.
 
-Table of Contents
+##Table of Contents
 
 	•	Features
 	•	Technologies Used
