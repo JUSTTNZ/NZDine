@@ -40,7 +40,7 @@ Installation
 
 	1.	Clone the repository:
 
-git clone https://github.com/your-username/NZdine.git
+git clone https://github.com/JUSTTNZ/NZdine.git
 cd NZdine
 
 
