@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className=" mx-auto  mt-5 pt-5 bg-[#0F172B] text-[#F1F8FF] ">
           <div className=" p-4 md:p-[50px] ">
           <div className=" py-[50px]">
-           <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
+           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
            <div className="">
            <h4 className="font-paci text-[#FEA116]  font-[400] text-left text-h4 mb-4 relative inline-block">Company
            <span className=" absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
@@ -102,20 +102,17 @@ export const Footer = () => {
            </div>
             <div className="container ">
                <div className="py-6 text-base border-t border-t-[rgba(256,256,256,0.1)]">
-               <div className="flex justify-between">
-                <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">
-                            NZDine</a>, All Right Reserved. 
-                        </div>
-                        <div>
-                        <div className="footer-menu">
-                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Home</a>
-                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Cookies</a>
-                                <a href="" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)]">Help</a>
-                                <a href="" className="">FQAs</a>
-                            </div>
-                        </div>
-                </div>
+               <div className="flex flex-col md:flex-row justify-between items-center p-4  text-white">
+    <div className="text-center md:text-left mb-3 md:mb-0">
+        &copy; <a className="border-b border-white" href="#">NZDine</a>, All Rights Reserved.
+    </div>
+    <div className="footer-menu mt-3 md:mt-0">
+        <a href="#" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)] last:border-r-0">Home</a>
+        <a href="#" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)] last:border-r-0">Cookies</a>
+        <a href="#" className="mr-4 pr-4 border-r border-r-[rgba(255, 255, 255, 0.1)] last:border-r-0">Help</a>
+        <a href="#" className="last:border-r-0">FAQs</a>
+    </div>
+</div>
                </div>
             </div>
           </div>

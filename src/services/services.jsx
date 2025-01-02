@@ -1,4 +1,3 @@
-import { Navbar } from "../component/navbar"
 import HeroBg from '../img/bg-hero.jpg';
 import { FaUtensils } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa6";
@@ -13,7 +12,7 @@ export const Service = () => {
         backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
     }}
 >
-            <Navbar />
+          
             <div className=" py-5  mb-5">
                 <div className="text-center my-12 pt-5 pb-4">
                     <h1 className="text-h1 text-center font-bold text-white mb-3 ">Services</h1>
@@ -44,7 +43,7 @@ export const Service = () => {
                 </div>
                 
                 <div className=" p-4 md:p-[50px]">
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-4">
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-4">
                     <div className="shadow-light rounded pt-3 hover:bg-[#FEA116] group transition duration-400 ease-in-out">
                             <div className="p-4 py-5 px-5">
                             <FaUserTie size='50' className="text-[#FEA116] mb-4 group-hover:text-white" />
@@ -76,7 +75,7 @@ export const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mt-2 ">
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 mt-2 ">
                     <div className="shadow-light rounded pt-3 hover:bg-[#FEA116] group transition duration-400 ease-in-out">
                             <div className="p-4 py-5 px-5">
                             <FaUserTie size='50' className="text-[#FEA116] mb-4 group-hover:text-white" />

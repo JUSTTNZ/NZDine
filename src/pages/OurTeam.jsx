@@ -1,5 +1,5 @@
 import ChefTeam from "../component/chefteam"
-import { Navbar } from "../component/navbar"
+
 import HeroBg from '../img/bg-hero.jpg';
 
 const OurTeam = () => {
@@ -11,7 +11,7 @@ const OurTeam = () => {
         backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
     }}
 >
-            <Navbar />
+          
             <div className=" py-5  mb-5">
               <div className="text-center my-12 pt-5 pb-4">
                   <h1 className="text-h1 text-center font-bold text-white mb-3 ">Our Team</h1>

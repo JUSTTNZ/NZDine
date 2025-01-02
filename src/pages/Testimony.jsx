@@ -10,7 +10,7 @@ const Testimony = () => {
           style={{ 
               backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
           }}>
-          <Navbar />
+          {/* <Navbar /> */}
             <div className=" py-5  mb-5">
               <div className="text-center my-12 pt-5 pb-4">
                   <h1 className="text-h1 text-center font-bold text-white mb-3 ">Testimonials</h1>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar } from "../component/navbar"
+
 import HeroBg from '../img/bg-hero.jpg';
 import video from '../img/video.jpg'
 import { FaPlay } from "react-icons/fa";
@@ -24,7 +24,7 @@ export const Booking = () => {
         backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
     }}
 >
-            <Navbar />
+         
             <div className="container py-5  mb-5">
                 <div className="text-center my-12 pt-5 pb-4">
                     <h1 className="text-h1 font-bold text-white mb-3 ">Booking</h1>
@@ -46,7 +46,7 @@ export const Booking = () => {
         </div>
 
         <div className=" py-[50px]">
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 w-full" >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full" >
             <div className="relative w-full ">
             <img src={video} alt="Background Image" className="w-full h-full object-cover" />
 
@@ -84,47 +84,70 @@ export const Booking = () => {
                     </div>
                 </div>
             )}
-                <div className=" w-full bg-[#0F172B]  ">
-                <div className="inline-flex flex-col items-start  p-[50px] w-full">
-    <h5 className="font-paci text-[#FEA116] font-[400] text-left text-h4 mb-4 relative inline-block">
-        Reservation
-        <span className="absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
-    </h5>
-    <h1 className="mb-5 text-query text-white font-nun font-bold leading-custom">Book A Table Online</h1>
-    <form>
-        <div className="">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            
+               <div className="w-full bg-[#0F172B]">
+    <div className="inline-flex flex-col items-start p-[50px] w-full">
+        <h5 className="font-paci text-[#FEA116] font-[400] text-left text-h4 mb-4 relative inline-block">
+            Reservation
+            <span className="absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
+        </h5>
+        <h1 className="mb-5 text-query text-white font-nun font-bold leading-custom">Book A Table Online</h1>
+        <form className="w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                 <div className="mb-3">
-                    <input type="text" className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded" id="name" placeholder="Your Name" />
+                    <input
+                        type="text"
+                        className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded"
+                        id="name"
+                        placeholder="Your Name"
+                    />
                 </div>
                 <div className="mb-3">
-                    <input type="email" className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded" id="email" placeholder="Your Email" />
+                    <input
+                        type="email"
+                        className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded"
+                        id="email"
+                        placeholder="Your Email"
+                    />
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-                <div className="form-floating">
-                    <input type="text" className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded" id="datetime" placeholder="Date & Time" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div className="mb-3">
+                    <input
+                        type="text"
+                        className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded"
+                        id="datetime"
+                        placeholder="Date & Time"
+                    />
                 </div>
                 <div className="mb-3">
-                    <select className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded" id="select1" >
+                    <select
+                        className="border border-[#FEA116] w-full py-4 pl-4 pr-12 rounded"
+                        id="select1"
+                    >
                         <option value="1">People 1</option>
                         <option value="2">People 2</option>
                         <option value="3">People 3</option>
                     </select>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+            <div className="grid grid-cols-1">
                 <div className="mb-3">
-                    <textarea className="border border-[#FEA116] w-full h-[100px] py-2 pl-4 rounded" placeholder="Special Request" id="message"></textarea>
+                    <textarea
+                        className="border border-[#FEA116] w-full h-[100px] py-2 pl-4 rounded"
+                        placeholder="Special Request"
+                        id="message"
+                    ></textarea>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
-                <button className="bg-[#FEA116] text-white rounded py-3 w-full" type="submit">Book Now</button>
+            <div className="grid grid-cols-1">
+                <button className="bg-[#FEA116] text-white rounded py-3 w-full" type="submit">
+                    Book Now
+                </button>
             </div>
- </div>
-    </form>
+        </form>
+    </div>
 </div>
-                </div>
                     
                     
                 

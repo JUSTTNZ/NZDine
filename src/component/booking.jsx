@@ -55,13 +55,13 @@ export const Booking = () => {
                 </div>
             )}
                 <div className="container w-full bg-[#0F172B]  ">
-                <div className="inline-flex flex-col items-start  p-[50px] w-full">
+                <div className="inline-flex flex-col items-start p-4 md:p-[50px] w-full">
     <h5 className="font-paci text-[#FEA116] font-[400] text-left text-h4 mb-4 relative inline-block">
         Reservation
         <span className="absolute top-1/2 right-[-55px] block w-[45px] h-[2px] bg-[#FEA116] ml-2"></span>
     </h5>
     <h1 className="mb-5 text-query text-white font-nun font-bold leading-custom">Book A Table Online</h1>
-    <form>
+    <form className="w-full">
         <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div className="mb-3">

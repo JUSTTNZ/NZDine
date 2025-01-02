@@ -1,4 +1,4 @@
-import { Navbar } from "../component/navbar"
+
 import HeroBg from '../img/bg-hero.jpg';
 import { FaCoffee } from "react-icons/fa";
 import { FaHamburger } from "react-icons/fa";
@@ -25,7 +25,7 @@ export const Menu = () => {
         backgroundImage: `linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(${HeroBg})` 
     }}
 >
-            <Navbar />
+          
             <div className=" py-5  mb-5">
               <div className=" flex flex-col text-center items-center my-12 pt-5 pb-4 justify-center">
                   <h1 className="text-h1 text-center font-bold text-white mb-3 text-center ">Food Menu</h1>
@@ -56,47 +56,46 @@ export const Menu = () => {
                     <h1 className="mb-5 text-query text-[#0F172B] font-nun font-bold leading-custom">Most Popular Items</h1>
                 </div>
                 
-                <div className="text-center">
-                    <ul className={`nav nav-pills inline-flex justify-center border-b mb-5 `} >
-                        <li className="nav-item">
-                            <a className={`flex items-center text-start mx-3 ms-0 pb-3 active 
-                                ${activeTab === 'tab-1' ? 'border-b-2 border-[#FEA116]':''}`}
-                                onClick={() => handleMenu('tab-1')}
-                                 data-bs-toggle="pill" href="#tab-1">
-                            <FaCoffee size='40'   className="text-[#FEA116] " />
-                                <div className="ps-3">
-                                    <small className="text-[#666565] text-[.875em]">Popular</small>
-                                    <h6 className="mt-n1 mb-0 text-[#0F172B] font-bold font-nun">Breakfast</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`flex items-center text-start mx-3 ms-0 pb-3 active 
-                                ${activeTab === 'tab-2' ? 'border-b-2 border-[#FEA116]':''}`}
-                                onClick={() => handleMenu('tab-2')}
-                            
-                            data-bs-toggle="pill" href="#tab-2">
-                            <FaHamburger size='40'  className="text-[#FEA116]" />
-                                <div className="ps-3">
-                                    <small className="text-[#666565] text-[.875em]">Special</small>
-                                    <h6 className="mt-n1 mb-0 text-[#0F172B] font-bold font-nun">Launch</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`flex items-center text-start mx-3 ms-0 pb-3 active 
-                                ${activeTab === 'tab-3' ? 'border-b-2 border-[#FEA116]':''}`}
-                                onClick={() => handleMenu('tab-3')}
-                            data-bs-toggle="pill" href="#tab-3">
-                                <FaUtensils size='40' className="text-[#FEA116]" />
-                                <div className="ps-3">
-                                    <small className="text-[#666565] text-[.875em]">Lovely</small>
-                                    <h6 className="mt-n1 mb-0 text-[#0F172B] font-bold font-nun">Dinner</h6>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    </div>
+                <div className="text-center pl-10 md:pl-0">
+    <ul className="nav nav-pills flex flex-wrap justify-center border-b mb-5">
+        <li className="nav-item w-1/2 md:w-auto">
+            <a className={`flex items-center text-start mx-3 ms-0 pb-3 active 
+                ${activeTab === 'tab-1' ? 'border-b-2 border-[#FEA116]' : ''}`}
+                onClick={() => handleMenu('tab-1')}
+                data-bs-toggle="pill" href="#tab-1">
+                <FaCoffee size='40' className="text-[#FEA116]" />
+                <div className="ps-3">
+                    <small className="text-[#666565] text-[.875em]">Popular</small>
+                    <h6 className="mt-n1 mb-0 text-[#0F172B] font-bold font-nun">Breakfast</h6>
+                </div>
+            </a>
+        </li>
+        <li className="nav-item w-1/2 md:w-auto">
+            <a className={`flex items-center text-start mx-3 ms-0 pb-3 active 
+                ${activeTab === 'tab-2' ? 'border-b-2 border-[#FEA116]' : ''}`}
+                onClick={() => handleMenu('tab-2')}
+                data-bs-toggle="pill" href="#tab-2">
+                <FaHamburger size='40' className="text-[#FEA116]" />
+                <div className="ps-3">
+                    <small className="text-[#666565] text-[.875em]">Special</small>
+                    <h6 className="mt-n1 mb-0 text-[#0F172B] font-bold font-nun">Lunch</h6>
+                </div>
+            </a>
+        </li>
+        <li className="nav-item w-full md:w-auto">
+            <a className={`flex items-center text-start mx-3 ms-0 pb-3 active 
+                ${activeTab === 'tab-3' ? 'border-b-2 border-[#FEA116]' : ''}`}
+                onClick={() => handleMenu('tab-3')}
+                data-bs-toggle="pill" href="#tab-3">
+                <FaUtensils size='40' className="text-[#FEA116]" />
+                <div className="ps-3">
+                    <small className="text-[#666565] text-[.875em]">Lovely</small>
+                    <h6 className="mt-n1 mb-0 text-[#0F172B] font-bold font-nun">Dinner</h6>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
 
 
                     <div className="container p-4 md:p-[70px]">

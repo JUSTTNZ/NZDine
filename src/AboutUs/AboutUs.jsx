@@ -1,5 +1,4 @@
 
-import { Navbar } from "../component/navbar"
 import HeroBg from '../img/bg-hero.jpg';
 
 import ChefTeam from "../component/chefteam";
@@ -12,7 +11,7 @@ const AboutUs = () => {
     
   return (
     <div className="w-full mb-10">
-        <Navbar />
+     
         <div 
             className="h-[390px] relative bg-cover bg-center bg-no-repeat text-white" 
             style={{ 
